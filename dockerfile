@@ -1,6 +1,7 @@
 FROM  ubuntu:latest
 MAINTAINER paaareddy3@gmail.com
-RUN apt install -y lighttpd \
+RUN apt-get update -y
+RUN apt-get install -y lighttpd \
  zip\
  unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
