@@ -1,7 +1,7 @@
 FROM  ubuntu:latest
 MAINTAINER paaareddy3@gmail.com
 RUN apt-get update -y
-RUN apt-get install -y lighttpd \
+RUN apt-get install -y httpd php\
  zip\
  unzip
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
