@@ -1,4 +1,4 @@
-FROM  linux:latest
+FROM  amazonlinux:latest
 MAINTAINER paaareddy3@gmail.com
 RUN yum update -y
 RUN yum install httpd \
