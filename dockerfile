@@ -1,9 +1,10 @@
 FROM  ubuntu:latest
 MAINTAINER paaareddy3@gmail.com
 RUN apt-get update -y
-RUN apt-get install -y httpd php\
+RUN apt-get install httpd\
+ php\
  zip\
- unzip
+ unzip -y
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip photogenic.zip
