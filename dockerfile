@@ -1,7 +1,7 @@
-FROM  ubuntu:latest
+FROM  linux:latest
 MAINTAINER paaareddy3@gmail.com
-RUN apt-get update -y
-RUN apt-get install httpd\
+RUN yum update -y
+RUN yum install httpd \
  php\
  zip\
  unzip -y
